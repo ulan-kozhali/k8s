@@ -1,0 +1,11 @@
+deployment:
+  name: nginx
+  replicas: 2
+  repository:
+    image: nginx
+    tag: 1.26.2-alpine3.20-perl
+
+service:
+  name: my-service
+  port: 80
+  type: NodePort
